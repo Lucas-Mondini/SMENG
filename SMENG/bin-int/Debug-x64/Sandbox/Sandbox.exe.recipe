@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>I:\dev\SMENG\SMENG\SMENG\bin\Debug-x64\SMENG\SMENG.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>I:\dev\SMENG\SMENG\SMENG\bin\Debug-x64\Sandbox\Sandbox.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
