@@ -2,8 +2,8 @@
 
 //For use by applications
 
-#include <stdio.h>
 #include <SMENG/Application.h>
+#include "SMENG/Log.h"
 
 
 // ------- Entry Point ----------------
