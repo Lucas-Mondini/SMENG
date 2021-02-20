@@ -1,1 +1,6 @@
-﻿  SMENG.vcxproj -> I:\dev\SMENG\SMENG\SMENG\bin\Debug-x64\SMENG\SMENG.dll
+﻿  Log.cpp
+I:\dev\SMENG\SMENG\SMENG\SMENG\src\SMENG\Log.h(17,54): warning C4251: 'SMENG::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'SMENG::Log'
+I:\dev\SMENG\SMENG\SMENG\SMENG\vendor\SPDLog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+I:\dev\SMENG\SMENG\SMENG\SMENG\src\SMENG\Log.h(18,56): warning C4251: 'SMENG::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'SMENG::Log'
+I:\dev\SMENG\SMENG\SMENG\SMENG\vendor\SPDLog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+  SMENG.vcxproj -> I:\dev\SMENG\SMENG\SMENG\bin\Debug-x64\SMENG\SMENG.dll

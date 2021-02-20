@@ -1,0 +1,3 @@
+[submodule "SMENG/SMENG/vendor/SPDLog"]
+	path = SMENG/SMENG/vendor/SPDLog
+	url = https://github.com/gabime/spdlog
