@@ -59,7 +59,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SEG_PLATAFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SEG_PLATAFORM_WINDOWS;SEG_PLATAFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)SMENG\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SMENG\src;$(SolutionDir)SMENG\vendor\SPDLog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,7 +74,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SEG_PLATAFORM_WINDOWS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SEG_PLATAFORM_WINDOWS;SEG_PLATAFORM_WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)SMENG\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)SMENG\src;$(SolutionDir)SMENG\vendor\SPDLog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
