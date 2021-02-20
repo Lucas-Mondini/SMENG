@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\SMENG\Log.h" />
     <ClInclude Include="src\SMENG\Application.h" />
     <ClInclude Include="src\SMENG\Core.h" />
     <ClInclude Include="src\SMENG.h" />
     <ClInclude Include="src\SMENG\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\SMENG\Log.cpp" />
     <ClCompile Include="src\SMENG\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,6 +70,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SEG_PLATAFORM_WINDOWS;SEG_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);SEG_PLATAFORM_WINDOWS;SEG_BUILD_DLL;SEG_PLATAFORM_WINDOWS;SEG_PLATAFORM_WINDOWS;SEG_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SMENG\vendor\SPDLog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,6 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SEG_PLATAFORM_WINDOWS;SEG_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);SEG_PLATAFORM_WINDOWS;SEG_BUILD_DLL;SEG_PLATAFORM_WINDOWS;SEG_PLATAFORM_WINDOWS;SEG_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SMENG\vendor\SPDLog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
