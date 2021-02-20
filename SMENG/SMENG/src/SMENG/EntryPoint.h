@@ -5,8 +5,13 @@
 extern SMENG::Application* SMENG::CreateApplication();
 
 int main(int argc, char** argv) {
-	printf("Entry Point");
+
+	SMENG::Log::Init();
+	SMENG_CORE_INFO("Initialized Log");
+	SMENG_CORE_WARN("Creating application...");
+
 	auto app = SMENG::CreateApplication();
+	SMENG_CORE_INFO("Application created sucessfully");
 	app->Run();
 	delete app;
 }
