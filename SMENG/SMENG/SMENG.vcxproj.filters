@@ -13,10 +13,10 @@
     <ClInclude Include="src\SMENG\Core.h">
       <Filter>SMENG</Filter>
     </ClInclude>
-    <ClInclude Include="src\SMENG\EntryPoint.h">
+    <ClInclude Include="src\SMENG\Log.h">
       <Filter>SMENG</Filter>
     </ClInclude>
-    <ClInclude Include="src\SMENG\Log.h">
+    <ClInclude Include="src\SMENG\EntryPoint.h">
       <Filter>SMENG</Filter>
     </ClInclude>
   </ItemGroup>
