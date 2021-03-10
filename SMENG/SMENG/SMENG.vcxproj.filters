@@ -4,6 +4,9 @@
     <Filter Include="SMENG">
       <UniqueIdentifier>{FF5A080E-6B6F-30BF-34F1-D31EA0C42CF0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SMENG\Events">
+      <UniqueIdentifier>{03D2E73A-EF34-77DF-98BA-AF9584FC4262}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\SMENG.h" />
@@ -13,10 +16,22 @@
     <ClInclude Include="src\SMENG\Core.h">
       <Filter>SMENG</Filter>
     </ClInclude>
-    <ClInclude Include="src\SMENG\Log.h">
+    <ClInclude Include="src\SMENG\EntryPoint.h">
       <Filter>SMENG</Filter>
     </ClInclude>
-    <ClInclude Include="src\SMENG\EntryPoint.h">
+    <ClInclude Include="src\SMENG\Events\ApplicationEvent.h">
+      <Filter>SMENG\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SMENG\Events\Event.h">
+      <Filter>SMENG\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SMENG\Events\KeyEvent.h">
+      <Filter>SMENG\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SMENG\Events\MouseEvent.h">
+      <Filter>SMENG\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SMENG\Log.h">
       <Filter>SMENG</Filter>
     </ClInclude>
   </ItemGroup>
