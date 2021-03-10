@@ -1,4 +1,8 @@
 #pragma once
+/***
+* this header needs to be included on the game
+*
+*/
 
 #ifdef SEG_PLATAFORM_WINDOWS
 
@@ -7,6 +11,7 @@ extern SMENG::Application* SMENG::CreateApplication();
 int main(int argc, char** argv) {
 
 	SMENG::Log::Init();
+
 	SMENG_CORE_INFO("Initialized Log");
 	SMENG_CORE_WARN("Creating application...");
 
