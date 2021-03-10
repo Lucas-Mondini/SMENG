@@ -1,8 +1,10 @@
 #pragma once
 
 #include <memory.h>
+
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace SMENG {
 	class SMENG_API Log
@@ -10,14 +12,16 @@ namespace SMENG {
 	public:
 		static void Init();
 
-		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
-		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
+		static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
+		static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 
 	private:
 		static std::shared_ptr<spdlog::logger> s_CoreLogger;
 		static std::shared_ptr<spdlog::logger> s_ClientLogger;
 	};
 }
+
+
 
 //Core Log Macros
 #define SMENG_CORE_FATAL(...)	::SMENG::Log::GetCoreLogger()->fatal(__VA_ARGS__)
