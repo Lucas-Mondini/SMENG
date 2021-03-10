@@ -9,3 +9,5 @@
 #else
 #error non suported plataform
 #endif 
+
+#define LShiftbit(x) (1 << x)
