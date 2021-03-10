@@ -23,13 +23,14 @@ project "SMENG"
 	}
 
 	includedirs{
-		"%{prj.name}/vendor/SPDLog/include"
+		"%{prj.name}/vendor/SPDLog/include",
+		"%{prj.name}/src"
 	}
 
 	filter "system:windows"
 		cppdialect"C++17"
 		staticruntime "On"
-		systemversion "latest"
+		systemversion "10.0.18362.0"
 
 		defines {
 		"SEG_PLATAFORM_WINDOWS",
@@ -81,8 +82,7 @@ project "Sandbox"
 		systemversion "10.0.18362.0"
 
 		defines {
-		"SEG_PLATAFORM_WINDOWS",
-		"SEG_BUILD_DLL"
+		"SEG_PLATAFORM_WINDOWS"
 		}
 
 		filter "configurations:Debug"
