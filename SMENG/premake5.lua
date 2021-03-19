@@ -17,6 +17,10 @@ project "SMENG"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+
+	pchheader "spch.h"
+	pchsource "%{prj.name}/src/spch.cpp"
+
 	files {
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
