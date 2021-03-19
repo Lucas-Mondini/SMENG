@@ -1,5 +1,7 @@
 #pragma once
 
+#include "spch.h"
+
 #ifdef SEG_PLATAFORM_WINDOWS
 	#ifdef SEG_BUILD_DLL
 		#define SMENG_API __declspec(dllexport)

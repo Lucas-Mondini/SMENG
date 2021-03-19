@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace SMENG {
 	class SMENG_API KeyEvent : public Event {

@@ -2,8 +2,6 @@
 
 #include "SMENG/Core.h"
 
-#include <string>
-#include <functional>
 
 namespace SMENG {
 

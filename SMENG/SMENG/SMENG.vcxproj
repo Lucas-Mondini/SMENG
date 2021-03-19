@@ -152,12 +152,14 @@
     <ClInclude Include="src\SMENG\Events\KeyEvent.h" />
     <ClInclude Include="src\SMENG\Events\MouseEvent.h" />
     <ClInclude Include="src\SMENG\Log.h" />
+    <ClInclude Include="src\spch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SMENG\Application.cpp" />
     <ClCompile Include="src\SMENG\Log.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\spch.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

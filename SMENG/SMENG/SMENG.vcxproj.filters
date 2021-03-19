@@ -34,6 +34,7 @@
     <ClInclude Include="src\SMENG\Log.h">
       <Filter>SMENG</Filter>
     </ClInclude>
+    <ClInclude Include="src\spch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SMENG\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\SMENG\Log.cpp">
       <Filter>SMENG</Filter>
     </ClCompile>
+    <ClCompile Include="src\spch.cpp" />
   </ItemGroup>
 </Project>
