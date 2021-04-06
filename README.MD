@@ -8,3 +8,7 @@ Youtube OpenGL tutorial ► https://www.youtube.com/watch?v=ZXjL7EqpSw8&list=PLt
 
 
 SMOL Engine		-> GitHub repository	► https://github.com/marciovmf/smol/tree/development					by Márcio Freita
+
+
+
+use git clone --recursive to clone the submodules too!!
