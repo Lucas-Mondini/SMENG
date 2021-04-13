@@ -1,13 +1,13 @@
+#include "spch.h"
 #include "Application.h"
 
-#include "Events/Event.h"
-#include "Events/ApplicationEvent.h"
-#include "SMENG/Log.h"
+#include <GLFW/glfw3.h>
 
 
 namespace SMENG{
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -16,9 +16,11 @@ namespace SMENG{
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(WINDOW_W, WINDOW_H);
-		SMENG_CLIENT_TRACE(e);
 
-		while (true);
+		while (Running) {
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
+		}
 	}
 }

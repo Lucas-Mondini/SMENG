@@ -9,6 +9,12 @@ workspace "SMENG"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Includes to root (SolutionDir)
+IncludeDir = {}
+IncludeDir["GLFW"] = "SMENG/vendor/GLFW/include"
+
+include "SMENG/vendor/GLFW"
+
 project "SMENG" 
 	location "SMENG"
 	kind "SharedLib"
@@ -28,7 +34,13 @@ project "SMENG"
 
 	includedirs{
 		"%{prj.name}/vendor/SPDLog/include",
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

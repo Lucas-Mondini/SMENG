@@ -35,6 +35,10 @@
       <Filter>SMENG</Filter>
     </ClInclude>
     <ClInclude Include="src\spch.h" />
+    <ClInclude Include="src\SMENG\Window.h">
+      <Filter>SMENG</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SMENG\Application.cpp">
@@ -44,5 +48,6 @@
       <Filter>SMENG</Filter>
     </ClCompile>
     <ClCompile Include="src\spch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

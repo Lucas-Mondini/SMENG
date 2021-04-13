@@ -1,6 +1,6 @@
 #pragma once
 #include "Core.h"
-
+#include "Window.h"
 
 namespace SMENG {
 
@@ -12,8 +12,8 @@ namespace SMENG {
 
 		void Run();
 	private:
-		int WINDOW_W = 1280;
-		int WINDOW_H = 720;
+		std::unique_ptr<Window> m_Window;
+		bool Running = true;
 	};
 
 	//To be defined in the client
